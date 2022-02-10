@@ -27,15 +27,7 @@ func main() {
   a++ // increments a by one
   b-- // decrements b by one
 
-  if (a == 2){
-    F.Printf("True %d a\n", a)
-  }
-  if (b == 1){
-    F.Printf("True %d b\n", b)
-  }
-  if (a != b){
-    F.Printf("False\n")
-  }
+
 
 // We printThe answers for aech operation carried out
   F.Printf("%d is the final answer when you add up a an b together.\n", c)
@@ -45,4 +37,31 @@ func main() {
   F.Printf("%d\n", g)
   F.Printf("%d\n", a)
   F.Printf("%d\n", b)
+
+// if statements
+  //  check if the value of a is 2
+  if (a == 2){
+
+    // print result
+    F.Printf("True %d a\n", a)
+  }
+
+  // check if the value of b is 1
+  if (b == 1){
+
+    // print result
+    F.Printf("True %d b\n", b)
+    b = 2
+  }
+
+// if else statement
+  // Check if a is not equal to b
+  if (a != b){
+    // print result
+    F.Printf("False\n")
+  }    else    {
+    F.Printf("True")
+  }
+
+
 }
