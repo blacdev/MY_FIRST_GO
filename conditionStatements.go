@@ -8,6 +8,7 @@ func main(){
   var t int
   var grade string
   var marks int
+  var x interface{}
 
 
   F.Println("Enter a value of T: ")
@@ -56,4 +57,21 @@ func main(){
    F.Printf("Invalid grade\n");
   }
   F.Printf("Your grade is %s\n", grade)
+  switch i:= x.(type) {
+  case nil:
+    F.Printf("type of x : %T", i)
+  case int:
+    F.Printf("x is int")
+  case float32:
+    F.Printf("x is float 32")
+  case float64:
+    F.Printf("x is float 64")
+  case func(int) float64:
+    F.Printf("x is float 32")
+  case bool, string:
+    F.Printf("x is bool or string")
+  default:
+    F.Printf("don't know the type")
+
+  }
 }
