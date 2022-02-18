@@ -70,9 +70,3 @@ type Circle struct{
 func (circle Circle) area() float64  {
   return math.Pi * circle.radius * circle.radius
 }
-
-
-
-// I learnt:
-// -Functions and how to they can be used:
-// - their call type either by value or by reference
