@@ -52,19 +52,38 @@
 
 
 
+// package main
+//
+// import F "fmt"
+//
+// func main(){
+//    a := 10
+//
+//    LOOP: for a < 20{
+//      if  a == 15{
+//        a+= 1
+//        goto LOOP
+//      }
+//      F.Printf("value of a: %d\n", a)
+//      a++
+//    }
+// }
+
 package main
 
-import F "fmt"
+import (F "fmt"
+        com "os"
+)
 
-func main(){
-   a := 10
+func main()  {
+  var value string
+  for {
+    F.Println("Please enter your name: ")
+    F.Scanln(&value)
 
-   LOOP: for a < 20{
-     if  a == 15{
-       a+= 1
-       goto LOOP
-     }
-     F.Printf("value of a: %d\n", a)
-     a++
-   }
+    if value == "seye"{
+      F.Println("Hello " + value)
+      com.Exit(3)
+    }
+  }
 }
